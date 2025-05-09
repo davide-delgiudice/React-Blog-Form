@@ -1,4 +1,5 @@
 import React from 'react'
+import videogames from '../data/videogames'
 
 function Main() {
   return (
