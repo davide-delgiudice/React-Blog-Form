@@ -20,16 +20,17 @@ function Main() {
   return (
     <>
         <div className='container'>
-            <ul className="list-group">
+            <ul className="list-group justify-content-between">
                 {games.map((videogame) => (
-                    <li key={`videogame-${videogame.id}`} className="list-group-item">
+                    <li key={`videogame-${videogame.id}`} className="list-group-item d-flex justify-content-between">
                         {videogame.name}
+                        <button className='btn btn-danger btn-sm'>Elimina</button>
                     </li>
                 ))}
             </ul>
 
             <form onSubmit={addGame}>
-                <div className='input-group mt-5'>
+                <div className='input-group my-5'>
                     <input 
                         type="text" 
                         className='form-control' 
