@@ -4,7 +4,7 @@ import videogames from '../data/videogames'
 function Main() {
   return (
     <>
-        <div>
+        <div className='container'>
             <ul className="list-group">
                 {videogames.map((videogame) => (
                     <li key={`videogame-${videogame.id}`} className="list-group-item">
@@ -12,6 +12,13 @@ function Main() {
                     </li>
                 ))}
             </ul>
+
+            <form>
+                <div className='input-group '>
+                    <input type="text" className='form-control' placeholder='Inserisci un nuovo gioco!'/>
+                    <button className='btn btn-success'>Aggiungi</button>
+                </div>
+            </form>
         </div>
     </>
   )
