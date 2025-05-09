@@ -2,7 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='bg-light'>
+        <h1>La mia lista di giochi completati</h1>
+    </div>
   )
 }
 
