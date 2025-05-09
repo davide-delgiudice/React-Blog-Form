@@ -3,7 +3,15 @@ import videogames from '../data/videogames'
 
 function Main() {
   return (
-    <div>Main</div>
+    <>
+        <div>
+            <ul className="list-group">
+                <li className="list-group-item">
+                    
+                </li>
+            </ul>
+        </div>
+    </>
   )
 }
 
