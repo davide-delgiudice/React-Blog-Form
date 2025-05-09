@@ -1,5 +1,6 @@
 import React from 'react'
 import videogames from '../data/videogames'
+import { useState } from 'react'
 
 function Main() {
   return (
@@ -14,7 +15,7 @@ function Main() {
             </ul>
 
             <form>
-                <div className='input-group '>
+                <div className='input-group mt-5'>
                     <input type="text" className='form-control' placeholder='Inserisci un nuovo gioco!'/>
                     <button className='btn btn-success'>Aggiungi</button>
                 </div>
