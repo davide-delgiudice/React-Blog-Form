@@ -17,6 +17,14 @@ function Main() {
         setNewGame('');
     }
 
+    const removeGame = (gameId) =>{
+        const updatedGames = games.filter((game) => {
+            return gameId !== game.id;
+        });
+
+        setGames(updatedGames);
+    };
+
   return (
     <>
         <div className='container'>
@@ -24,7 +32,7 @@ function Main() {
                 {games.map((videogame) => (
                     <li key={`videogame-${videogame.id}`} className="list-group-item d-flex justify-content-between">
                         {videogame.name}
-                        <button className='btn btn-danger btn-sm'>Elimina</button>
+                        <button className='btn btn-danger btn-sm' onClick={() => removeGame(videogame.id)}>Elimina</button>
                     </li>
                 ))}
             </ul>
