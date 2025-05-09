@@ -6,9 +6,11 @@ function Main() {
     <>
         <div>
             <ul className="list-group">
-                <li className="list-group-item">
-                    
-                </li>
+                {videogames.map((videogame) => (
+                    <li key={`videogame-${videogame.id}`} className="list-group-item">
+                        {videogame.name}
+                    </li>
+                ))}
             </ul>
         </div>
     </>
