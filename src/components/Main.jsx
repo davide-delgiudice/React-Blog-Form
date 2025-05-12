@@ -10,7 +10,7 @@ function Main() {
     const addGame = (e) =>{
         e.preventDefault();
         const newObj = {
-            id: games[games.length-1] + 1,
+            id: games[games.length-1].id + 1,
             name: newGame,
         }
         setGames([...games, newObj]);
